@@ -1,0 +1,30 @@
+# ===== Node.js =====
+node_modules/
+npm-debug.log*
+
+# ===== Android / Gradle =====
+.gradle/
+build/
+*/build/
+local.properties
+*.iml
+*.log
+
+# ===== IDE =====
+.idea/workspace.xml
+.idea/caches/
+.idea/tasks.xml
+.idea/shelf/
+.idea/deploymentTargetSelector.xml
+.idea/deviceManager.xml
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ===== Environment =====
+.env
+.env.local

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>打卡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>打卡</h1>
+      <div class="current-datetime">
+        <span id="current-time">--:--:--</span>
+        <span id="current-date">----年--月--日</span>
+      </div>
+    </header>
+
+    <div class="status-badge" id="status-badge">
+      <span id="status-text">尚未打卡</span>
+    </div>
+
+    <div class="actions">
+      <button id="btn-clock-in" class="btn btn-in">上班打卡</button>
+      <button id="btn-clock-out" class="btn btn-out" disabled>下班打卡</button>
+    </div>
+
+    <div class="records-section">
+      <h2>今日记录</h2>
+      <div id="records-list" class="records-list">
+        <div class="empty-hint">暂无打卡记录</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
