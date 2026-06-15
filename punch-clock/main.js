@@ -21,8 +21,8 @@ function createWindow() {
   mainWindow.loadFile(path.join(__dirname, 'renderer', 'index.html'));
 }
 
-app.whenReady().then(() => {
-  initDatabase(app.getPath('userData'));
+app.whenReady().then(async () => {
+  await initDatabase(app.getPath('userData'));
   createWindow();
 
   ipcMain.handle('clock-in', () => clockIn());
